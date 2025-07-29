@@ -1,0 +1,54 @@
+# MANIFEST.in - Controls which files are included in the source distribution
+
+# Include essential documentation and configuration files
+include README.md
+include LICENSE
+include CLAUDE.md
+include pyproject.toml
+include setup.py
+
+# Include package data and templates
+recursive-include src/decipher_bench/templates *.html *.css *.js
+recursive-include src/decipher_bench/data *.json *.yaml *.yml
+
+# Include documentation
+recursive-include docs *.md *.rst *.txt
+include docs/DEV.md
+
+# Include test data and fixtures
+recursive-include tests *.py *.json *.yaml *.yml *.txt
+recursive-include tests/fixtures *.json *.yaml *.yml
+
+# Include scripts and utilities
+include clean_up.sh
+include *.sh
+
+# Include configuration files
+include .env.example
+include .gitignore
+include .pre-commit-config.yaml
+
+# Exclude development and build artifacts
+global-exclude *.pyc
+global-exclude __pycache__
+global-exclude *.so
+global-exclude .DS_Store
+global-exclude *.egg-info
+global-exclude .git*
+global-exclude .pytest_cache
+global-exclude .mypy_cache
+global-exclude .ruff_cache
+global-exclude htmlcov
+global-exclude .coverage
+global-exclude .tox
+global-exclude build
+global-exclude dist
+global-exclude .venv
+global-exclude venv
+
+# Exclude IDE and editor files
+global-exclude .vscode
+global-exclude .idea
+global-exclude *.swp
+global-exclude *.swo
+global-exclude *~
