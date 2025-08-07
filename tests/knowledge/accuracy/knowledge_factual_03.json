@@ -1,0 +1,22 @@
+{
+  "test_id": "knowledge_factual_03",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": ["knowledge", "factual", "geography", "linguistics"],
+    "difficulty": "medium"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant that provides accurate, factual information.",
+    "user_prompt": "Which country has the most official languages written into its constitution?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 50
+    }
+  },
+  "evaluation": {
+    "type": "exact_match",
+    "expected_answer": "Zimbabwe",
+    "acceptable_variations": ["zimbabwe"]
+  }
+} 

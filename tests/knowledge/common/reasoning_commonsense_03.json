@@ -1,0 +1,21 @@
+{
+  "test_id": "reasoning_commonsense_03",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": ["reasoning", "common-sense", "social"],
+    "difficulty": "easy"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant with a strong understanding of common sense.",
+    "user_prompt": "Your roommate hasn't come home from work at their usual time and isn't answering their phone after multiple calls. What is a reasonable next step?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 100
+    }
+  },
+  "evaluation": {
+    "type": "bert_score",
+    "expected_answer": "A reasonable next step is to try contacting mutual friends or other people your roommate might be with to see if they know their whereabouts."
+  }
+} 

@@ -1,0 +1,22 @@
+{
+  "test_id": "knowledge_factual_08",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": ["knowledge", "factual", "science", "physics"],
+    "difficulty": "easy"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant that provides accurate, factual information.",
+    "user_prompt": "What is the boiling point of water at standard sea-level atmospheric pressure, in Celsius?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 50
+    }
+  },
+  "evaluation": {
+    "type": "exact_match",
+    "expected_answer": "100°C",
+    "acceptable_variations": ["100", "100 degrees Celsius", "100C"]
+  }
+} 

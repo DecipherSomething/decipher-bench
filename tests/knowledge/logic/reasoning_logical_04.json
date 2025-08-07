@@ -1,0 +1,25 @@
+{
+  "test_id": "reasoning_logical_04",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": [
+      "reasoning",
+      "logical",
+      "river-crossing"
+    ],
+    "difficulty": "hard"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant that excels at logical reasoning.",
+    "user_prompt": "A farmer needs to cross a river with a wolf, a goat, and a cabbage. He can only take one item at a time in his boat. If left alone, the wolf will eat the goat, and the goat will eat the cabbage. How does he safely get all three items across the river?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 200
+    }
+  },
+  "evaluation": {
+    "type": "bert_score",
+    "expected_answer": "First, take the goat across. Return with nothing. Take the wolf across, but bring the goat back. Leave the goat, and take the cabbage across. Return with nothing. Finally, take the goat across."
+  }
+} 

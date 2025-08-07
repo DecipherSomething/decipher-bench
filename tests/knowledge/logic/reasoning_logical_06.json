@@ -1,0 +1,25 @@
+{
+  "test_id": "reasoning_logical_06",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": [
+      "reasoning",
+      "logical",
+      "measurement"
+    ],
+    "difficulty": "hard"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant that excels at logical reasoning.",
+    "user_prompt": "You have two ropes, and each takes exactly 60 minutes to burn from one end to the other. They do not burn at a uniform rate. How can you measure exactly 45 minutes?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 200
+    }
+  },
+  "evaluation": {
+    "type": "bert_score",
+    "expected_answer": "Light Rope A from both ends and Rope B from one end simultaneously. When Rope A finishes burning in 30 minutes, light the other end of Rope B. Rope B will finish burning in another 15 minutes, for a total of 45 minutes."
+  }
+} 

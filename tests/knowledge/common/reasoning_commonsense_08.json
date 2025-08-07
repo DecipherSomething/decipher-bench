@@ -1,0 +1,21 @@
+{
+  "test_id": "reasoning_commonsense_08",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": ["reasoning", "common-sense", "troubleshooting"],
+    "difficulty": "easy"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant with a strong understanding of common sense.",
+    "user_prompt": "You are trying to print an important document, but the pages are coming out completely blank. What is the first and most common thing you should check?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 100
+    }
+  },
+  "evaluation": {
+    "type": "bert_score",
+    "expected_answer": "The first thing to check is whether the printer has run out of ink or toner, as this is the most common cause of blank pages."
+  }
+} 

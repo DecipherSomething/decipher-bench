@@ -1,0 +1,21 @@
+{
+  "test_id": "generation_creative_summarize_sonnet_01",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": ["generation", "creative", "summarization"],
+    "difficulty": "medium"
+  },
+  "test_case": {
+    "system_prompt": "You are an expert in English literature. Summarize the following sonnet in one sentence.",
+    "user_prompt": "Shall I compare thee to a summer’s day?\nThou art more lovely and more temperate:\nRough winds do shake the darling buds of May,\nAnd summer’s lease hath all too short a date...",
+    "parameters": {
+      "temperature": 0.5,
+      "max_tokens": 100
+    }
+  },
+  "evaluation": {
+    "type": "bert_score",
+    "expected_answer": "The speaker praises his beloved's beauty, claiming it is more eternal and temperate than a fleeting summer's day."
+  }
+} 

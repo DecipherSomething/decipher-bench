@@ -1,0 +1,22 @@
+{
+  "test_id": "knowledge_factual_07",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": ["knowledge", "factual", "science", "astronomy"],
+    "difficulty": "easy"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant that provides accurate, factual information.",
+    "user_prompt": "From which cardinal direction does the sun rise each day?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 50
+    }
+  },
+  "evaluation": {
+    "type": "exact_match",
+    "expected_answer": "East",
+    "acceptable_variations": ["east", "The East"]
+  }
+} 

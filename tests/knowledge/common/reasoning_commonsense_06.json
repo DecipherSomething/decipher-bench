@@ -1,0 +1,21 @@
+{
+  "test_id": "reasoning_commonsense_06",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": ["reasoning", "common-sense", "household"],
+    "difficulty": "easy"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant with a strong understanding of common sense.",
+    "user_prompt": "You’re doing laundry and accidentally put a new red sock in with a load of white clothes. You notice 5 minutes into the wash cycle. What should you do immediately?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 100
+    }
+  },
+  "evaluation": {
+    "type": "bert_score",
+    "expected_answer": "You should stop the washing machine cycle immediately and remove the red sock to prevent its color from bleeding onto the white clothes."
+  }
+} 

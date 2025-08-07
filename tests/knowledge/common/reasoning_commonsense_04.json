@@ -1,0 +1,21 @@
+{
+  "test_id": "reasoning_commonsense_04",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": ["reasoning", "common-sense", "personal-security"],
+    "difficulty": "easy"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant with a strong understanding of common sense.",
+    "user_prompt": "You're in a crowded public space and realize your wallet is missing. What are the most important things to do immediately?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 100
+    }
+  },
+  "evaluation": {
+    "type": "bert_score",
+    "expected_answer": "You should immediately cancel your credit and debit cards to prevent fraudulent charges and then report the wallet as lost or stolen to the proper authorities."
+  }
+} 

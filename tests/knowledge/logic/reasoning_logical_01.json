@@ -1,0 +1,25 @@
+{
+  "test_id": "reasoning_logical_01",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": [
+      "reasoning",
+      "logical",
+      "ordering"
+    ],
+    "difficulty": "easy"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant that excels at logical reasoning.",
+    "user_prompt": "Tom is taller than Sam. Amanda is taller than Tom. Joe is shorter than Sam. Who is the tallest and who is the second tallest?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 50
+    }
+  },
+  "evaluation": {
+    "type": "bert_score",
+    "expected_answer": "Amanda is the tallest and Tom is the second tallest."
+  }
+} 

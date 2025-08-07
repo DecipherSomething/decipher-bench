@@ -1,0 +1,21 @@
+{
+  "test_id": "reasoning_commonsense_01",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": ["reasoning", "common-sense", "situational"],
+    "difficulty": "easy"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant with a strong understanding of common sense.",
+    "user_prompt": "You’re running late for a flight and realize you forgot your passport at home. What is your most critical next step?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 100
+    }
+  },
+  "evaluation": {
+    "type": "bert_score",
+    "expected_answer": "The most critical step is to go back home to get the passport, as it is impossible to board an international flight without it."
+  }
+} 

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decipher Bench Report</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; color: #333; }
+        h1, h2 { color: #1a1a1a; }
+        table { border-collapse: collapse; width: 100%; margin-bottom: 2em; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+       .summary-card { border: 1px solid #ccc; padding: 1em; margin-bottom: 1em; border-radius: 8px; background-color: #fafafa; }
+       .passed { color: green; }
+       .failed { color: red; }
+        pre { background-color: #eee; padding: 1em; border-radius: 5px; white-space: pre-wrap; word-wrap: break-word; }
+    </style>
+</head>
+<body>
+    <h1>Decipher Bench Report</h1>
+    <div class="summary-card">
+        <h2>Overall Summary</h2>
+        <p><strong>Benchmark ID:</strong> {{ benchmark_id }}</p>
+        <p><strong>Timestamp:</strong> {{ timestamp }}</p>
+        <p><strong>Total Tests:</strong> {{ summary.total_tests }}</p>
+        <p><strong>Passed:</strong> <span class="passed">{{ summary.passed }}</span></p>
+        <p><strong>Failed:</strong> <span class="failed">{{ summary.failed }}</span></p>
+        <p><strong>Average Score:</strong> {{ summary.average_score }}</p>
+        <p><strong>Total Execution Time:</strong> {{ summary.execution_time }}</p>
+    </div>
+
+    <h2>Results by Category</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Tests Run</th>
+                <th>Passed</th>
+                <th>Failed</th>
+                <th>Average Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for category, data in summary_by_category.items() %}
+            <tr>
+                <td>{{ category }}</td>
+                <td>{{ data.tests_run }}</td>
+                <td class="passed">{{ data.passed }}</td>
+                <td class="failed">{{ data.failed }}</td>
+                <td>{{ "%.2f"|format(data.score) }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Detailed Results</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Test ID</th>
+                <th>Category</th>
+                <th>Status</th>
+                <th>Score</th>
+                <th>Expected</th>
+                <th>Actual</th>
+                <th>Error</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in detailed_results %}
+            <tr>
+                <td>{{ result.test_id }}</td>
+                <td>{{ result.category }}</td>
+                <td>
+                    {% if result.passed %}
+                        <span class="passed">PASSED</span>
+                    {% else %}
+                        <span class="failed">FAILED</span>
+                    {% endif %}
+                </td>
+                <td>{{ "%.2f"|format(result.score) if result.score is not none else 'N/A' }}</td>
+                <td><pre>{{ result.expected }}</pre></td>
+                <td><pre>{{ result.actual }}</pre></td>
+                <td><pre>{{ result.error or 'None' }}</pre></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "test_id": "knowledge_factual_01",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": ["knowledge", "factual", "science", "chemistry"],
+    "difficulty": "easy"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant that provides accurate, factual information.",
+    "user_prompt": "Which chemical element is named after the creator of the periodic table?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 50
+    }
+  },
+  "evaluation": {
+    "type": "exact_match",
+    "expected_answer": "Mendelevium",
+    "acceptable_variations": ["mendelevium", "Md"]
+  }
+} 

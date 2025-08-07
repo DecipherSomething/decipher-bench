@@ -1,0 +1,21 @@
+{
+  "test_id": "reasoning_commonsense_07",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": ["reasoning", "common-sense", "troubleshooting"],
+    "difficulty": "easy"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant with a strong understanding of common sense.",
+    "user_prompt": "You plug in your laptop, but the charging indicator doesn't light up. You've already tried two different wall outlets that you know are working. What is the next logical thing to check?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 100
+    }
+  },
+  "evaluation": {
+    "type": "bert_score",
+    "expected_answer": "The next thing to check is the physical connection of the charger cable to the laptop's charging port to ensure it is securely plugged in."
+  }
+} 

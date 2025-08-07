@@ -1,0 +1,21 @@
+{
+  "test_id": "reasoning_commonsense_02",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": ["reasoning", "common-sense", "safety"],
+    "difficulty": "easy"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant with a strong understanding of common sense.",
+    "user_prompt": "Your smoke detector goes off with a loud, continuous alarm at 2 a.m. What is the best immediate response?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 100
+    }
+  },
+  "evaluation": {
+    "type": "bert_score",
+    "expected_answer": "Immediately check for any signs of fire or smoke. If any are present, evacuate the premises and call 911."
+  }
+} 

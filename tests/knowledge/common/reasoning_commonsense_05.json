@@ -1,0 +1,21 @@
+{
+  "test_id": "reasoning_commonsense_05",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": ["reasoning", "common-sense", "home-maintenance"],
+    "difficulty": "easy"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant with a strong understanding of common sense.",
+    "user_prompt": "Your smoke detector keeps making a single, sharp 'chirp' or 'beep' sound every 30 seconds. There is no smoke. What should you do?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 100
+    }
+  },
+  "evaluation": {
+    "type": "bert_score",
+    "expected_answer": "The most likely cause is a low battery, so you should replace the battery in the smoke detector."
+  }
+} 

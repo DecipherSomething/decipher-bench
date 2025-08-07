@@ -1,0 +1,22 @@
+{
+  "test_id": "knowledge_factual_02",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": ["knowledge", "factual", "history", "politics"],
+    "difficulty": "easy"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant that provides accurate, factual information.",
+    "user_prompt": "Which country was the first to grant women the right to vote in national elections?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 50
+    }
+  },
+  "evaluation": {
+    "type": "exact_match",
+    "expected_answer": "New Zealand",
+    "acceptable_variations": ["new zealand"]
+  }
+} 

@@ -16,3 +16,8 @@ __description__ = "An open-source LLM benchmarking framework"
 #     "BaseEvaluator",
 #     "cli_main",
 # ]
+# File: decipher_bench/__init__.py
+
+from.benchmark import LLMBenchmark
+
+__all__ = ["LLMBenchmark"]

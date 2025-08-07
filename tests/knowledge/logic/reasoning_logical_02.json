@@ -1,0 +1,29 @@
+{
+  "test_id": "reasoning_logical_02",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": [
+      "reasoning",
+      "logical",
+      "spatial"
+    ],
+    "difficulty": "medium"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant that excels at logical reasoning.",
+    "user_prompt": "A standard analog clock shows the time 5:30. What is the angle in degrees between the hour and minute hands?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 50
+    }
+  },
+  "evaluation": {
+    "type": "exact_match",
+    "expected_answer": 15,
+    "acceptable_variations": [
+      "15",
+      "15 degrees"
+    ]
+  }
+} 

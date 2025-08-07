@@ -1,0 +1,22 @@
+{
+  "test_id": "knowledge_factual_05",
+  "version": "1.0",
+  "metadata": {
+    "author": "Decipher Team",
+    "tags": ["knowledge", "factual", "geography", "culture"],
+    "difficulty": "easy"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant that provides accurate, factual information.",
+    "user_prompt": "Which country consumes the most coffee per capita?",
+    "parameters": {
+      "temperature": 0.0,
+      "max_tokens": 50
+    }
+  },
+  "evaluation": {
+    "type": "exact_match",
+    "expected_answer": "Finland",
+    "acceptable_variations": ["finland"]
+  }
+} 
