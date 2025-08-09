@@ -1,0 +1,25 @@
+{
+  "test_id": "knowledge_factual_001",
+  "version": "1.0",
+  "metadata": {
+    "created_at": "2025-08-08",
+    "author": "UCSD TCG",
+    "tags": ["factual", "technology", "contextual"],
+    "difficulty": "easy",
+    "estimated_tokens": 21
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant.",
+    "user_prompt": "Define the term \"Elements\" in one sentence based on the context sentence provided.",
+    "context": "The layout was broken because several HTML elements were misaligned.",
+    "parameters": {
+      "temperature": 0.5,
+      "max_tokens": 50,
+      "top_p": 0.5
+    }
+  },
+  "evaluation": {
+    "type": "BERTscore",
+    "expected_answer": "Elements are individual HTML components of a document or webpage."
+  }
+}

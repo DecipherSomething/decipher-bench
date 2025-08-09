@@ -1,0 +1,25 @@
+{
+  "test_id": "knowledge_factual_001",
+  "version": "1.0",
+  "metadata": {
+    "created_at": "2025-08-08",
+    "author": "UCSD TCG",
+    "tags": ["factual", "technology", "contextual"],
+    "difficulty": "medium",
+    "estimated_tokens": 26
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant.",
+    "user_prompt": "Define the term \"Object-Oriented Programming\" in one sentence based on the context sentence provided.",
+    "context": "The codebase was refactored using OOP principles.",
+    "parameters": {
+      "temperature": 0.5,
+      "max_tokens": 50,
+      "top_p": 0.5
+    }
+  },
+  "evaluation": {
+    "type": "BERTscore",
+    "expected_answer": "Object-oriented programming is a type of computer programming/software design that focuses on the creation of objects that have specific and unique attributes and abilities."
+  }
+}

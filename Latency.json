@@ -1,0 +1,25 @@
+{
+  "test_id": "knowledge_factual_001",
+  "version": "1.0",
+  "metadata": {
+    "created_at": "2025-08-08",
+    "author": "UCSD TCG",
+    "tags": ["factual", "technology", "contextual"],
+    "difficulty": "easy",
+    "estimated_tokens": 21
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant.",
+    "user_prompt": "Define the term \"Latency\" in one sentence based on the context sentence provided.",
+    "context": "Reducing latency is critical in real-time communication platforms.",
+    "parameters": {
+      "temperature": 0.5,
+      "max_tokens": 50,
+      "top_p": 0.5
+    }
+  },
+  "evaluation": {
+    "type": "BERTscore",
+    "expected_answer": "Latency refers to the delay between a user's action and the response from a system, commonly used in networking and real-time systems."
+  }
+}

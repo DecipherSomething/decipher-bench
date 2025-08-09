@@ -1,0 +1,25 @@
+{
+  "test_id": "knowledge_factual_001",
+  "version": "1.0",
+  "metadata": {
+    "created_at": "2025-08-08",
+    "author": "UCSD TCG",
+    "tags": ["factual", "technology", "contextual"],
+    "difficulty": "easy",
+    "estimated_tokens": 21
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant.",
+    "user_prompt": "Define the term \"Backend\" in one sentence based on the context sentence provided.",
+    "context": "The backend processes form submissions and stores the data.",
+    "parameters": {
+      "temperature": 0.5,
+      "max_tokens": 50,
+      "top_p": 0.5
+    }
+  },
+  "evaluation": {
+    "type": "BERTscore",
+    "expected_answer": "The part of the software system that users don't interact with."
+  }
+}
