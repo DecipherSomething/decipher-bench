@@ -1,0 +1,29 @@
+{
+    "test_id": "knowledge_factual_062",
+    "version": "1.0",
+    "metadata": {
+        "created_at": "2025-08-09",
+        "author": "UCSD TCG",
+        "tags": [
+            "factual",
+            "technology",
+            "contextual"
+        ],
+        "difficulty": "hard",
+        "estimated_tokens": "26"
+    },
+    "test_case": {
+        "system_prompt": "You are a helpful assistant.",
+        "user_prompt": "Define the term \"Load Shedding\" based on the context sentence provided.",
+        "context": "The system began load shedding to preserve resources during the spike.",
+        "parameters": {
+            "temperature": 0.5,
+            "max_tokens": 50,
+            "top_p": 0.5
+        }
+    },
+    "evaluation": {
+        "metric": "bertscore",
+        "expected_answer": "the method used to distribute electrical power across multiple sources demanding power"
+    }
+}

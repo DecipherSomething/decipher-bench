@@ -1,0 +1,29 @@
+{
+    "test_id": "knowledge_factual_046",
+    "version": "1.0",
+    "metadata": {
+        "created_at": "2025-08-09",
+        "author": "UCSD TCG",
+        "tags": [
+            "factual",
+            "technology",
+            "contextual"
+        ],
+        "difficulty": "medium",
+        "estimated_tokens": "20"
+    },
+    "test_case": {
+        "system_prompt": "You are a helpful assistant.",
+        "user_prompt": "Define the term \"Bridge\" based on the context sentence provided.",
+        "context": "A network bridge was used to connect the office LAN to the wireless network.",
+        "parameters": {
+            "temperature": 0.5,
+            "max_tokens": 50,
+            "top_p": 0.5
+        }
+    },
+    "evaluation": {
+        "metric": "bertscore",
+        "expected_answer": "a network device that connects two or more LANs (local area networks) to form a larger LAN"
+    }
+}

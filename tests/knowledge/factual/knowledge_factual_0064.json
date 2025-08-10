@@ -1,0 +1,29 @@
+{
+    "test_id": "knowledge_factual_064",
+    "version": "1.0",
+    "metadata": {
+        "created_at": "2025-08-09",
+        "author": "UCSD TCG",
+        "tags": [
+            "factual",
+            "technology",
+            "contextual"
+        ],
+        "difficulty": "hard",
+        "estimated_tokens": "23"
+    },
+    "test_case": {
+        "system_prompt": "You are a helpful assistant.",
+        "user_prompt": "Define the term \"Sharding\" based on the context sentence provided.",
+        "context": "The database uses sharding to improve query performance across large datasets.",
+        "parameters": {
+            "temperature": 0.5,
+            "max_tokens": 50,
+            "top_p": 0.5
+        }
+    },
+    "evaluation": {
+        "metric": "bertscore",
+        "expected_answer": "a horizontal partition of data in a database or search engine"
+    }
+}

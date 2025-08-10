@@ -1,0 +1,29 @@
+{
+    "test_id": "knowledge_factual_036",
+    "version": "1.0",
+    "metadata": {
+        "created_at": "2025-08-09",
+        "author": "UCSD TCG",
+        "tags": [
+            "factual",
+            "technology",
+            "contextual"
+        ],
+        "difficulty": "easy",
+        "estimated_tokens": "21"
+    },
+    "test_case": {
+        "system_prompt": "You are a helpful assistant.",
+        "user_prompt": "Define the term \"Software\" based on the context sentence provided.",
+        "context": "The software was updated to patch a known security issue.",
+        "parameters": {
+            "temperature": 0.5,
+            "max_tokens": 50,
+            "top_p": 0.5
+        }
+    },
+    "evaluation": {
+        "metric": "bertscore",
+        "expected_answer": "Software is a program or set of instructions that tells a computer, phone, or tablet what to do."
+    }
+}

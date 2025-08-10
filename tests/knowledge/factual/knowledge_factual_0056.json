@@ -1,0 +1,29 @@
+{
+    "test_id": "knowledge_factual_056",
+    "version": "1.0",
+    "metadata": {
+        "created_at": "2025-08-09",
+        "author": "UCSD TCG",
+        "tags": [
+            "factual",
+            "technology",
+            "contextual"
+        ],
+        "difficulty": "hard",
+        "estimated_tokens": "21"
+    },
+    "test_case": {
+        "system_prompt": "You are a helpful assistant.",
+        "user_prompt": "Define the term \"Webhook\" based on the context sentence provided.",
+        "context": "A webhook notifies the system whenever a new file is uploaded.",
+        "parameters": {
+            "temperature": 0.5,
+            "max_tokens": 50,
+            "top_p": 0.5
+        }
+    },
+    "evaluation": {
+        "metric": "bertscore",
+        "expected_answer": "a lightweight, event-driven communication that automatically sends data between applications via HTTP"
+    }
+}

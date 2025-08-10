@@ -1,0 +1,29 @@
+{
+    "test_id": "knowledge_factual_053",
+    "version": "1.0",
+    "metadata": {
+        "created_at": "2025-08-09",
+        "author": "UCSD TCG",
+        "tags": [
+            "factual",
+            "technology",
+            "contextual"
+        ],
+        "difficulty": "hard",
+        "estimated_tokens": "20"
+    },
+    "test_case": {
+        "system_prompt": "You are a helpful assistant.",
+        "user_prompt": "Define the term \"Fabric\" based on the context sentence provided.",
+        "context": "The data center uses a software-defined fabric to improve network agility.",
+        "parameters": {
+            "temperature": 0.5,
+            "max_tokens": 50,
+            "top_p": 0.5
+        }
+    },
+    "evaluation": {
+        "metric": "bertscore",
+        "expected_answer": "the mesh of connections between network devices such as access points, switches, and routers that transports data to its destination"
+    }
+}

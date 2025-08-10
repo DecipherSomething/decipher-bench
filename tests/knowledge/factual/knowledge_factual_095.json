@@ -1,0 +1,25 @@
+{
+  "test_id": "knowledge_factual_095",
+  "version": "1.0",
+  "metadata": {
+    "created_at": "2025-08-08",
+    "author": "UCSD TCG",
+    "tags": ["factual", "technology", "contextual"],
+    "difficulty": "medium",
+    "estimated_tokens": 24
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant.",
+    "user_prompt": "Define the term \"Fault Tolerance\" in one sentence based on the context sentence provided.",
+    "context": "They ran simulations to test the application's fault tolerance under failure scenarios.",
+    "parameters": {
+      "temperature": 0.5,
+      "max_tokens": 50,
+      "top_p": 0.5
+    }
+  },
+  "evaluation": {
+    "type": "BERTscore",
+    "expected_answer": "The ability of a system to continue operating properly in the event of a component failure."
+  }
+}

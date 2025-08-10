@@ -1,0 +1,29 @@
+{
+    "test_id": "knowledge_factual_052",
+    "version": "1.0",
+    "metadata": {
+        "created_at": "2025-08-09",
+        "author": "UCSD TCG",
+        "tags": [
+            "factual",
+            "technology",
+            "contextual"
+        ],
+        "difficulty": "medium",
+        "estimated_tokens": "20"
+    },
+    "test_case": {
+        "system_prompt": "You are a helpful assistant.",
+        "user_prompt": "Define the term \"Snapshot\" based on the context sentence provided.",
+        "context": "The admin took a snapshot of the virtual machine before applying updates.",
+        "parameters": {
+            "temperature": 0.5,
+            "max_tokens": 50,
+            "top_p": 0.5
+        }
+    },
+    "evaluation": {
+        "metric": "bertscore",
+        "expected_answer": "a point-in-time copy or representation of the state of a system, database, file, or virtual machine"
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "test_id": "knowledge_factual_039",
+    "version": "1.0",
+    "metadata": {
+        "created_at": "2025-08-09",
+        "author": "UCSD TCG",
+        "tags": [
+            "factual",
+            "technology",
+            "contextual"
+        ],
+        "difficulty": "medium",
+        "estimated_tokens": "23"
+    },
+    "test_case": {
+        "system_prompt": "You are a helpful assistant.",
+        "user_prompt": "Define the term \"Virtual Private Network\" based on the context sentence provided.",
+        "context": "Remote employees must connect through a VPN.",
+        "parameters": {
+            "temperature": 0.5,
+            "max_tokens": 50,
+            "top_p": 0.5
+        }
+    },
+    "evaluation": {
+        "metric": "bertscore",
+        "expected_answer": "VPNs are networks that allow public internet connections to be used as private networks as a means of improving security."
+    }
+}

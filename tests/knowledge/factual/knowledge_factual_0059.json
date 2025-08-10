@@ -1,0 +1,29 @@
+{
+    "test_id": "knowledge_factual_059",
+    "version": "1.0",
+    "metadata": {
+        "created_at": "2025-08-09",
+        "author": "UCSD TCG",
+        "tags": [
+            "factual",
+            "technology",
+            "contextual"
+        ],
+        "difficulty": "medium",
+        "estimated_tokens": "22"
+    },
+    "test_case": {
+        "system_prompt": "You are a helpful assistant.",
+        "user_prompt": "Define the term \"Encryption\" based on the context sentence provided.",
+        "context": "All data sent over the network is protected with end-to-end encryption.",
+        "parameters": {
+            "temperature": 0.5,
+            "max_tokens": 50,
+            "top_p": 0.5
+        }
+    },
+    "evaluation": {
+        "metric": "bertscore",
+        "expected_answer": "the process of converting information or data into a code, especially to prevent unauthorized access"
+    }
+}

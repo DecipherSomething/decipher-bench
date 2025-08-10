@@ -1,0 +1,29 @@
+{
+    "test_id": "knowledge_factual_044",
+    "version": "1.0",
+    "metadata": {
+        "created_at": "2025-08-09",
+        "author": "UCSD TCG",
+        "tags": [
+            "factual",
+            "technology",
+            "contextual"
+        ],
+        "difficulty": "medium",
+        "estimated_tokens": "20"
+    },
+    "test_case": {
+        "system_prompt": "You are a helpful assistant.",
+        "user_prompt": "Define the term \"Stream\" based on the context sentence provided.",
+        "context": "The server uses a stream to send real-time stock data to the client.",
+        "parameters": {
+            "temperature": 0.5,
+            "max_tokens": 50,
+            "top_p": 0.5
+        }
+    },
+    "evaluation": {
+        "metric": "bertscore",
+        "expected_answer": "transmit or receive (data, especially video and audio material) over the internet as a steady, continuous flow."
+    }
+}

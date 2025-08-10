@@ -1,0 +1,29 @@
+{
+    "test_id": "knowledge_factual_048",
+    "version": "1.0",
+    "metadata": {
+        "created_at": "2025-08-09",
+        "author": "UCSD TCG",
+        "tags": [
+            "factual",
+            "technology",
+            "contextual"
+        ],
+        "difficulty": "medium",
+        "estimated_tokens": "21"
+    },
+    "test_case": {
+        "system_prompt": "You are a helpful assistant.",
+        "user_prompt": "Define the term \"Handshake\" based on the context sentence provided.",
+        "context": "A secure handshake must be completed before the devices can exchange data.",
+        "parameters": {
+            "temperature": 0.5,
+            "max_tokens": 50,
+            "top_p": 0.5
+        }
+    },
+    "evaluation": {
+        "metric": "bertscore",
+        "expected_answer": "a signal between two devices or programs, used to, e.g., authenticate, coordinate"
+    }
+}

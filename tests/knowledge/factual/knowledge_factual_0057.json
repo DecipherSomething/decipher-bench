@@ -1,0 +1,29 @@
+{
+    "test_id": "knowledge_factual_057",
+    "version": "1.0",
+    "metadata": {
+        "created_at": "2025-08-09",
+        "author": "UCSD TCG",
+        "tags": [
+            "factual",
+            "technology",
+            "contextual"
+        ],
+        "difficulty": "medium",
+        "estimated_tokens": "31"
+    },
+    "test_case": {
+        "system_prompt": "You are a helpful assistant.",
+        "user_prompt": "Define the term \"CLI\" based on the context sentence provided.",
+        "context": "System administrators often prefer the CLI for its scripting capabilities.",
+        "parameters": {
+            "temperature": 0.5,
+            "max_tokens": 50,
+            "top_p": 0.5
+        }
+    },
+    "evaluation": {
+        "metric": "bertscore",
+        "expected_answer": "a software mechanism you use to interact with your operating system using your keyboard"
+    }
+}

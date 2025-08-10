@@ -1,0 +1,29 @@
+{
+    "test_id": "knowledge_factual_063",
+    "version": "1.0",
+    "metadata": {
+        "created_at": "2025-08-09",
+        "author": "UCSD TCG",
+        "tags": [
+            "factual",
+            "technology",
+            "contextual"
+        ],
+        "difficulty": "medium",
+        "estimated_tokens": "27"
+    },
+    "test_case": {
+        "system_prompt": "You are a helpful assistant.",
+        "user_prompt": "Define the term \"Garbage Collection\" based on the context sentence provided.",
+        "context": "Garbage collection automatically frees up memory no longer in use.",
+        "parameters": {
+            "temperature": 0.5,
+            "max_tokens": 50,
+            "top_p": 0.5
+        }
+    },
+    "evaluation": {
+        "metric": "bertscore",
+        "expected_answer": "a memory recovery feature built into programming languages such as C# and Java"
+    }
+}

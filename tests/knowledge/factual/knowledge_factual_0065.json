@@ -1,0 +1,29 @@
+{
+    "test_id": "knowledge_factual_065",
+    "version": "1.0",
+    "metadata": {
+        "created_at": "2025-08-09",
+        "author": "UCSD TCG",
+        "tags": [
+            "factual",
+            "technology",
+            "contextual"
+        ],
+        "difficulty": "hard",
+        "estimated_tokens": "23"
+    },
+    "test_case": {
+        "system_prompt": "You are a helpful assistant.",
+        "user_prompt": "Define the term \"Debounce\" based on the context sentence provided.",
+        "context": "The search input uses a debounce function to reduce the number of API calls.",
+        "parameters": {
+            "temperature": 0.5,
+            "max_tokens": 50,
+            "top_p": 0.5
+        }
+    },
+    "evaluation": {
+        "metric": "bertscore",
+        "expected_answer": "ensuring a function doesn't get called too frequently"
+    }
+}

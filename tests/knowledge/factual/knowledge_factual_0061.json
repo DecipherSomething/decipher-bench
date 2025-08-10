@@ -1,0 +1,29 @@
+{
+    "test_id": "knowledge_factual_061",
+    "version": "1.0",
+    "metadata": {
+        "created_at": "2025-08-09",
+        "author": "UCSD TCG",
+        "tags": [
+            "factual",
+            "technology",
+            "contextual"
+        ],
+        "difficulty": "hard",
+        "estimated_tokens": "26"
+    },
+    "test_case": {
+        "system_prompt": "You are a helpful assistant.",
+        "user_prompt": "Define the term \"Idempotent\" based on the context sentence provided.",
+        "context": "The PUT method is idempotent, so calling it multiple times has the same effect.",
+        "parameters": {
+            "temperature": 0.5,
+            "max_tokens": 50,
+            "top_p": 0.5
+        }
+    },
+    "evaluation": {
+        "metric": "bertscore",
+        "expected_answer": "the property of certain operations in mathematics and computer science whereby they can be applied multiple times without changing the result beyond the initial application"
+    }
+}

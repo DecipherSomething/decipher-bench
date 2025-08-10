@@ -1,0 +1,29 @@
+{
+    "test_id": "knowledge_factual_067",
+    "version": "1.0",
+    "metadata": {
+        "created_at": "2025-08-09",
+        "author": "UCSD TCG",
+        "tags": [
+            "factual",
+            "technology",
+            "contextual"
+        ],
+        "difficulty": "hard",
+        "estimated_tokens": "28"
+    },
+    "test_case": {
+        "system_prompt": "You are a helpful assistant.",
+        "user_prompt": "Define the term \"Blue-Green Deployment\" based on the context sentence provided.",
+        "context": "They used a blue-green deployment strategy to roll out the new version with zero downtime.",
+        "parameters": {
+            "temperature": 0.5,
+            "max_tokens": 50,
+            "top_p": 0.5
+        }
+    },
+    "evaluation": {
+        "metric": "bertscore",
+        "expected_answer": "technique that enables you to release applications by shifting traffic between two identical environments that are running different versions of the application."
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "test_id": "knowledge_factual_081",
+  "version": "1.0",
+  "metadata": {
+    "created_at": "2025-08-08",
+    "author": "UCSD TCG",
+    "tags": ["factual", "technology", "contextual"],
+    "difficulty": "easy",
+    "estimated_tokens": 21
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant.",
+    "user_prompt": "Define the term \"Network\" in one sentence based on the context sentence provided.",
+    "context": "The app fails when the network connection drops.",
+    "parameters": {
+      "temperature": 0.5,
+      "max_tokens": 50,
+      "top_p": 0.5
+    }
+  },
+  "evaluation": {
+    "type": "BERTscore",
+    "expected_answer": "A network is a system that connects devices and allows them to communicate with each other to share resources, information and data."
+  }
+}
