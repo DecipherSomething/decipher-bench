@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "a memory recovery feature built into programming languages such as C# and Java"
     }
 }

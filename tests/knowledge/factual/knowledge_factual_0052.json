@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "a point-in-time copy or representation of the state of a system, database, file, or virtual machine"
     }
 }

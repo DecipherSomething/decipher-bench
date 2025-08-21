@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "Software whose source code is open to the public."
     }
 }

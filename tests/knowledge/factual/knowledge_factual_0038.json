@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "The process of running another operating system on a machine using virtualization software that is segregated from the main system."
     }
 }

@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "the network of linked computer systems programmed to perform the same task"
     }
 }

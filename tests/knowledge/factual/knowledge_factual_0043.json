@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "the smallest set or sequence of instructions that a computer can manage and execute; it is the basic unit of processor (CPU) utilization."
     }
 }

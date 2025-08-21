@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "the process of converting information or data into a code, especially to prevent unauthorized access"
     }
 }

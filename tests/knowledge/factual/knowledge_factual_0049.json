@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "a mechanism by which an application can intercept events, such as messages, mouse actions, and keystrokes"
     }
 }

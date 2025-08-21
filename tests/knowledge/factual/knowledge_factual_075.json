@@ -1,0 +1,25 @@
+{
+  "test_id": "knowledge_factual_075",
+  "version": "1.0",
+  "metadata": {
+    "created_at": "2025-08-08",
+    "author": "UCSD TCG",
+    "tags": ["factual", "technology", "contextual"],
+    "difficulty": "medium",
+    "estimated_tokens": 21
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant.",
+    "user_prompt": "Define the term \"Bus\" in one sentence based on the context sentence provided.",
+    "context": "Things slow down when too many devices are using the same bus.",
+    "parameters": {
+      "temperature": 0.5,
+      "max_tokens": 50,
+      "top_p": 0.5
+    }
+  },
+  "evaluation": {
+    "type": "BERTscore",
+    "expected_answer": "A bus is a communication system that is used to transfer data between parts inside a computer or could also be used to transfer data between different computers."
+  }
+}

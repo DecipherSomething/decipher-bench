@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "VPNs are networks that allow public internet connections to be used as private networks as a means of improving security."
     }
 }

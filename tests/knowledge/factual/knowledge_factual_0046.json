@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "a network device that connects two or more LANs (local area networks) to form a larger LAN"
     }
 }

@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "technique that enables you to release applications by shifting traffic between two identical environments that are running different versions of the application."
     }
 }

@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "a discrete environment set up within an operating system in which one or more applications may be run, typically assigned only those resources necessary for the application to function correctly"
     }
 }

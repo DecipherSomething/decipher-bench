@@ -1,0 +1,25 @@
+{
+  "test_id": "knowledge_factual_093",
+  "version": "1.0",
+  "metadata": {
+    "created_at": "2025-08-08",
+    "author": "UCSD TCG",
+    "tags": ["factual", "technology", "contextual"],
+    "difficulty": "medium",
+    "estimated_tokens": 25
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant.",
+    "user_prompt": "Define the term \"Middleware Stack\" in one sentence based on the context sentence provided.",
+    "context": "Debugging was difficult due to how many components were in the middleware stack.",
+    "parameters": {
+      "temperature": 0.5,
+      "max_tokens": 50,
+      "top_p": 0.5
+    }
+  },
+  "evaluation": {
+    "type": "BERTscore",
+    "expected_answer": "A layered architecture of middleware components that process data or requests between systems."
+  }
+}

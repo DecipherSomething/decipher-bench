@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "transmit or receive (data, especially video and audio material) over the internet as a steady, continuous flow."
     }
 }

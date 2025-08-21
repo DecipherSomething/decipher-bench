@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "a lightweight, event-driven communication that automatically sends data between applications via HTTP"
     }
 }

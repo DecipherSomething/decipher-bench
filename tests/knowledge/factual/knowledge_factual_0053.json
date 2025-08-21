@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "the mesh of connections between network devices such as access points, switches, and routers that transports data to its destination"
     }
 }

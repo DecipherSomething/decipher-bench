@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "IDE is a software application that includes tools like source code editors, debuggers, and build automation tools."
     }
 }

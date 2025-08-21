@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "Software is a program or set of instructions that tells a computer, phone, or tablet what to do."
     }
 }

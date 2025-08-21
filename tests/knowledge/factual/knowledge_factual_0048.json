@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "a signal between two devices or programs, used to, e.g., authenticate, coordinate"
     }
 }

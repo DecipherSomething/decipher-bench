@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "a piece of software that operates on a device's operating system and assists in or takes responsibility for collecting physical data"
     }
 }

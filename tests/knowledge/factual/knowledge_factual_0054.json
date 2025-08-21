@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "produce a copy or imitation of (a document, signature, banknote, or work or art) for the purpose of deception"
     }
 }

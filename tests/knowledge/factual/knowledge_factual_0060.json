@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "process of blocking users, bots, or applications that are over-using or abusing a web property"
     }
 }

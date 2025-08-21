@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "an object (in software or in hardware) which represents the right to perform some operation"
     }
 }

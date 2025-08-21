@@ -23,7 +23,7 @@
         }
     },
     "evaluation": {
-        "metric": "bertscore",
+        "metric": "BERTscore",
         "expected_answer": "SDK is a set of tools for creating specific types of software. SDK’s are released by companies that control the platform the software is being developed for."
     }
 }
