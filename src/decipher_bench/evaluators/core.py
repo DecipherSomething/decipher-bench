@@ -22,7 +22,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 from huggingface_hub import login
 
 
-login("hugging face access token") 
+#login("hugging face access token") 
 
 
 
