@@ -1,0 +1,26 @@
+{
+  "test_id": "knowledge_factual_001",
+  "version": "1.0",
+  "metadata": {
+    "created_at": "2025-08-10",
+    "author": "UCSD TCG",
+    "tags": ["factual", "technology", "contextual"],
+    "difficulty": "medium",
+    "estimated_tokens": "21"
+  },
+  "test_case": {
+    "system_prompt": "You are a helpful assistant.",
+    "user_prompt": "Define the term \"Wait\" in one sentence based on the context sentence provided",
+    "context": "The thread will wait until the child threads have completed",
+    "parameters": {
+      "temperature": 0.5,
+      "max_tokens": 50, 
+      "top_p": 0.5
+    }
+  },
+  "evaluation": {
+    "type": "BERTscore",
+    "expected_answer": "Wait is a system call that stops the execution of a parent process until the child process finishes executing"
+    }
+  }
+
